@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My Health Expert</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:white;
+color:black;
+}
+
+header{
+background:black;
+color:white;
+padding:20px;
+text-align:center;
+font-size:30px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+background:#f4f4f4;
+padding:10px;
+}
+
+button{
+margin:6px;
+padding:10px 16px;
+border:none;
+background:black;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#333;
+}
+
+section{
+display:none;
+padding:25px;
+}
+
+.active{
+display:block;
+}
+
+.food{
+background:#fafafa;
+border-left:4px solid black;
+padding:10px;
+margin:10px 0;
+}
+
+.recipe{
+margin-left:15px;
+font-size:14px;
+color:#444;
+}
+
+ul{
+line-height:1.8;
+}
+
+</style>
+
+<script>
+
+function openSection(id){
+let sections=document.querySelectorAll("section");
+
+sections.forEach(s=>{
+s.classList.remove("active");
+});
+
+document.getElementById(id).classList.add("active");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+🩺 My Health Expert
+</header>
+
+<nav>
+
+<button onclick="openSection('hair')">Hair</button>
+<button onclick="openSection('eyes')">Eyes</button>
+<button onclick="openSection('skin')">Skin</button>
+<button onclick="openSection('heart')">Heart</button>
+<button onclick="openSection('liver')">Liver</button>
+<button onclick="openSection('kidneys')">Kidneys</button>
+<button onclick="openSection('lungs')">Lungs</button>
+<button onclick="openSection('fat')">Fat Loss</button>
+
+<button onclick="openSection('meal')">My Meal</button>
+
+<button onclick="openSection('ai')">AI Assistant</button>
+<button onclick="openSection('scan')">Scan Medicine</button>
+<button onclick="openSection('diet')">Diet Planner</button>
+<button onclick="openSection('mental')">Mental Health</button>
+<button onclick="openSection('doctor')">Doctor</button>
+
+</nav>
+
+<!-- EYES -->
+
+<section id="eyes" class="active">
+
+<h2>👁 Healthy Foods for Eyes</h2>
+
+<div class="food">
+🥕 Carrots
+<div class="recipe">
+Recipe: Carrot salad with lemon and olive oil
+</div>
+</div>
+
+<div class="food">
+🥬 Spinach
+<div class="recipe">
+Recipe: Spinach smoothie (spinach + banana + almond milk)
+</div>
+</div>
+
+<div class="food">
+🫐 Blueberries
+<div class="recipe">
+Recipe: Blueberry yogurt bowl
+</div>
+</div>
+
+</section>
+
+<!-- HAIR -->
+
+<section id="hair">
+
+<h2>💇 Healthy Foods for Hair</h2>
+
+<div class="food">
+🥑 Avocado
+<div class="recipe">
+Recipe: Avocado toast with whole grain bread
+</div>
+</div>
+
+<div class="food">
+🥜 Almonds
+<div class="recipe">
+Recipe: Almond energy bowl with dates
+</div>
+</div>
+
+<div class="food">
+🌱 Chia Seeds
+<div class="recipe">
+Recipe: Chia pudding with fruits
+</div>
+</div>
+
+</section>
+
+<!-- SKIN -->
+
+<section id="skin">
+
+<h2>✨ Healthy Foods for Skin</h2>
+
+<div class="food">
+🍅 Tomatoes
+<div class="recipe">
+Recipe: Tomato cucumber salad
+</div>
+</div>
+
+<div class="food">
+🥕 Carrots
+<div class="recipe">
+Recipe: Carrot ginger soup
+</div>
+</div>
+
+<div class="food">
+🥑 Avocado
+<div class="recipe">
+Recipe: Avocado smoothie
+</div>
+</div>
+
+</section>
+
+<!-- HEART -->
+
+<section id="heart">
+
+<h2>❤️ Healthy Foods for Heart</h2>
+
+<div class="food">
+🥣 Oats
+<div class="recipe">
+Recipe: Oatmeal with berries
+</div>
+</div>
+
+<div class="food">
+🫘 Beans
+<div class="recipe">
+Recipe: Bean vegetable stew
+</div>
+</div>
+
+<div class="food">
+🥜 Walnuts
+<div class="recipe">
+Recipe: Walnut yogurt bowl
+</div>
+</div>
+
+</section>
+
+<!-- LIVER -->
+
+<section id="liver">
+
+<h2>🧬 Healthy Foods for Liver</h2>
+
+<div class="food">
+🧄 Garlic
+<div class="recipe">
+Recipe: Garlic roasted vegetables
+</div>
+</div>
+
+<div class="food">
+🥦 Broccoli
+<div class="recipe">
+Recipe: Broccoli stir fry
+</div>
+</div>
+
+</section>
+
+<!-- KIDNEYS -->
+
+<section id="kidneys">
+
+<h2>🫘 Healthy Foods for Kidneys</h2>
+
+<div class="food">
+🍎 Apples
+<div class="recipe">
+Recipe: Apple cinnamon oatmeal
+</div>
+</div>
+
+<div class="food">
+🫐 Blueberries
+<div class="recipe">
+Recipe: Blueberry smoothie
+</div>
+</div>
+
+</section>
+
+<!-- LUNGS -->
+
+<section id="lungs">
+
+<h2>🫁 Healthy Foods for Lungs</h2>
+
+<div class="food">
+🍏 Apples
+<div class="recipe">
+Recipe: Apple smoothie
+</div>
+</div>
+
+<div class="food">
+🌿 Ginger
+<div class="recipe">
+Recipe: Ginger herbal tea
+</div>
+</div>
+
+</section>
+
+<!-- FAT LOSS -->
+
+<section id="fat">
+
+<h2>⚖ Vegetarian Foods for Fat Loss</h2>
+
+<ul>
+<li>🥦 Broccoli</li>
+<li>🥬 Spinach</li>
+<li>🫘 Lentils</li>
+<li>🥑 Avocado</li>
+<li>🥣 Oats</li>
+<li>🌱 Chia seeds</li>
+</ul>
+
+</section>
+
+<!-- MEAL PLAN -->
+
+<section id="meal">
+
+<h2>🥗 My Meal – 30 Day Vegetarian Plan</h2>
+
+<ul>
+
+<li>Day 1 – Oatmeal + berries + almonds</li>
+<li>Day 2 – Quinoa bowl + vegetables</li>
+<li>Day 3 – Avocado toast + smoothie</li>
+<li>Day 4 – Lentil soup + salad</li>
+<li>Day 5 – Brown rice + broccoli</li>
+
+<li>Day 6 – Yogurt + nuts + fruit</li>
+<li>Day 7 – Chickpea salad</li>
+<li>Day 8 – Oats + apple + walnuts</li>
+<li>Day 9 – Vegetable quinoa bowl</li>
+<li>Day 10 – Smoothie bowl</li>
+
+<li>Day 11 – Lentil curry + rice</li>
+<li>Day 12 – Vegetable soup</li>
+<li>Day 13 – Avocado salad</li>
+<li>Day 14 – Chickpea bowl</li>
+<li>Day 15 – Quinoa salad</li>
+
+<li>Day 16 – Yogurt + berries</li>
+<li>Day 17 – Oatmeal bowl</li>
+<li>Day 18 – Vegetable stir fry</li>
+<li>Day 19 – Lentil salad</li>
+<li>Day 20 – Smoothie meal</li>
+
+<li>Day 21 – Chickpea curry</li>
+<li>Day 22 – Oats + fruit</li>
+<li>Day 23 – Vegetable quinoa</li>
+<li>Day 24 – Avocado toast</li>
+<li>Day 25 – Lentil soup</li>
+
+<li>Day 26 – Yogurt bowl</li>
+<li>Day 27 – Brown rice + vegetables</li>
+<li>Day 28 – Smoothie bowl</li>
+<li>Day 29 – Chickpea salad</li>
+<li>Day 30 – Healthy veggie bowl</li>
+
+</ul>
+
+</section>
+
+<!-- FEATURES -->
+
+<section id="ai">
+<h2>🤖 AI Health Assistant</h2>
+<p>Future feature: Ask questions and get health advice.</p>
+</section>
+
+<section id="scan">
+<h2>📷 Scan Medicine</h2>
+<p>Upload a photo of medicine to see details.</p>
+</section>
+
+<section id="diet">
+<h2>🥗 Diet Planner</h2>
+<p>Create personalized vegetarian diet plans.</p>
+</section>
+
+<section id="mental">
+<h2>🧘 Mental Health Support</h2>
+<p>Meditation tips, breathing exercises and stress relief.</p>
+</section>
+
+<section id="doctor">
+<h2>📞 Doctor Consultation</h2>
+<p>Connect with health professionals online.</p>
+</section>
+
+</body>
+</html>
